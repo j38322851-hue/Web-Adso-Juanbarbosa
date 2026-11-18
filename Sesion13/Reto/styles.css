@@ -1,0 +1,21 @@
+:root {
+    --bs-primary: #d4a338;
+    --bs-primary-rgb: 212, 163, 56;
+}
+
+.btn-primary {
+    --bs-btn-color: #121212;
+    --bs-btn-bg: #d4a338;
+    --bs-btn-border-color: #d4a338;
+    --bs-btn-hover-color: #121212;
+    --bs-btn-hover-bg: #b88a28;
+    --bs-btn-hover-border-color: #a67c21;
+    --bs-btn-active-color: #121212;
+    --bs-btn-active-bg: #a67c21;
+    --bs-btn-active-border-color: #8f6919;
+}
+
+body {
+    background-color: #121212 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}

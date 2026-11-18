@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparativa de Landings: CSS Puro vs Bootstrap · Arena Gol 5</title>
+    <meta name="description" content="Comparación de rendimiento, desarrollo y estructura entre la landing page con CSS puro (Sesión 8) y la versión con Bootstrap (Sesión 13) para Arena Gol 5.">
+    
+    <!-- Bootstrap CSS por CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <!-- Tu archivo de estilos propios -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-light text-dark">
+
+    <header class="bg-dark text-white text-center py-5 shadow">
+        <div class="container">
+            <h1 class="display-5 fw-bold text-success">Comparativa de Proyectos Web</h1>
+            <p class="lead text-secondary">Arena Gol 5 · Sesión 8 (CSS Puro) vs Sesión 13 (Bootstrap)</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        
+        <!-- Sección 1: Capturas de Lighthouse -->
+        <section class="mb-5">
+            <h2 class="h3 fw-bold mb-4 text-success text-center">1. Resultados de Rendimiento (Lighthouse)</h2>
+            <div class="row g-4">
+                <div class="col-12 col-md-6 text-center">
+                    <div class="card p-3 shadow-sm h-100">
+                        <h3 class="h5 fw-bold mb-3">Versión CSS Puro (Sesión 8)</h3>
+                        <img src="img/lighthouse-sesion08.jpg" alt="Captura de Lighthouse de la versión CSS puro" class="img-fluid rounded border mb-2" width="600" height="400" loading="lazy">
+                        <p class="text-secondary small">Evaluación de accesibilidad, buenas prácticas y SEO en incógnito.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <div class="card p-3 shadow-sm h-100">
+                        <h3 class="h5 fw-bold mb-3">Versión Bootstrap (Sesión 13)</h3>
+                        <img src="img/lighthouse-sesion13.jpg" alt="Captura de Lighthouse de la versión Bootstrap" class="img-fluid rounded border mb-2" width="600" height="400" loading="lazy">
+                        <p class="text-secondary small">Evaluación optimizada utilizando el framework por CDN.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Tabla Comparativa -->
+        <section class="mb-5">
+            <h2 class="h3 fw-bold mb-4 text-success text-center">2. Tabla Comparativa de Criterios</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle shadow-sm bg-white">
+                    <thead class="table-dark">
+                        <tr>
+                            <th>Criterio de Evaluación</th>
+                            <th>Landing Sesión 8 (CSS Puro / Flexbox)</th>
+                            <th>Landing Sesión 13 (Bootstrap 5)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="fw-bold">Puntaje de Rendimiento (Lighthouse)</td>
+                            <td>Alto rendimiento natural por tener menos peso de archivos externos y hojas de estilo propias.</td>
+                            <td>Excelente rendimiento, condicionado levemente por la carga del framework externo vía CDN.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Líneas de CSS escritas</td>
+                            <td>Mayor volumen de código propio para configurar contenedores, rejillas y comportamientos responsivos.</td>
+                            <td>Mínimas líneas de CSS personalizado, delegando la maquetación en las clases utilitarias del framework.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Tiempo de desarrollo</td>
+                            <td>Más tiempo invertido en definir media queries y ajustar manualmente el diseño en celulares y tablets.</td>
+                            <td>Desarrollo ágil y estructurado gracias al uso inmediato de componentes prefabricados (cards, navbar, grid).</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Apariencia y Personalización ("Qué tan única se ve")</td>
+                            <td>Diseño 100% original adaptado al detalle visual exacto que se busca para el complejo deportivo.</td>
+                            <td>Apariencia moderna pero estandarizada, requiriendo sobrescribir variables corporativas para salir del diseño genérico.</td>
+                        </tr>
+                        <tr>
+                            <td class="fw-bold">Facilidad para hacerla Responsive</td>
+                            <td>Se requiere codificar y validar manualmente cada regla de adaptación (`@media (min-width: ...)`).</td>
+                            <td>Automatizada mediante el sistema de columnas y prefijos adaptativos (`col-12`, `col-md-6`, etc.).</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Sección 3: Conclusión -->
+        <section class="row justify-content-center mb-5">
+            <div class="col-12 col-lg-10">
+                <div class="card border-0 shadow-sm p-4 p-md-5 bg-white">
+                    <h2 class="h3 fw-bold mb-3 text-success">3. Conclusión Personal</h2>
+                    <p class="fs-5 text-secondary mb-3">
+                        <strong>¿Usarás Bootstrap en el proyecto final o tu propio kit? ¿Por qué?</strong>
+                    </p>
+                    <p class="text-secondary">
+                        Para el proyecto final de <em>Arena Gol 5</em>, prefiero inclinarme por desarrollar <strong>mi propio kit de estilos con CSS puro (Flexbox y Grid)</strong>. Aunque Bootstrap optimiza los tiempos de entrega y facilita la maquetación responsiva, maquetar desde cero me otorga un dominio absoluto sobre la interfaz gráfica, la optimización de recursos y la identidad visual de la marca, evitando depender de librerías externas o sobrecargar el código con clases predeterminadas que no se ajustan al 100% a la idea original.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <div class="container">
+            <p class="mb-0">2026 - Juan Pablo Barbosa Berrio · Aprendiz ADSO SENA (Ficha 3491237) · Medellín, Colombia</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS por CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5298PHd5JVp1HvL985+nqUivzIebhndOJK28anvf" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+/* Ajustes generales y colores de marca para la tarea comparativa */
+body {
+    background-color: #f3faf6 !important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Estilo para las imágenes de Lighthouse dentro de las tarjetas */
+.card img {
+    object-fit: cover;
+    background-color: #e2f0e8;
+}
